@@ -1,0 +1,217 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display : flex;
+}
+
+/*section*/
+section {
+    width : 65%;
+    background : #ff7e00;
+    margin : 0 auto;
+    padding : 20px;
+    overflow : auto;
+}
+
+section .item {
+    position : relative;
+    height : 160px;
+    border : 2px solid red;
+    display: flex;
+    margin-top : -2px;
+}
+
+.category-info {
+    width : 50px;
+    writing-mode: vertical-rl;
+    transform : rotate(180deg);
+    font-size : 20px;
+    font-weight : 500;
+    color : red;
+    text-align: center;
+    letter-spacing: -1px;
+    border-left : 2px solid red;
+    line-height: 45px;
+}
+
+.title {
+    width : calc(70% - 35px);
+    height : 160px;
+    border-right : 2px solid red;
+    font-weight : 600;
+    font-size : 8vh;
+    letter-spacing: -0.5vh;
+    color : red;
+    padding-left : 15px;
+    overflow : hidden;
+    display: flex;
+    align-items: center;
+}
+
+.etc-info {
+    display : flex;
+    flex-direction: column;
+    width : calc(30% - 15px);
+}
+
+.etc-info div {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etc-info div:first-child{
+    height : 80px;
+    border-bottom : 2px solid red;
+    font-size : 1.3vw;
+    font-weight: 500;
+    color : red;
+    text-align: center;
+}
+
+.etc-info div:last-child{
+    height : 80px;
+}
+
+.etc-info section {
+    border-radius : 32px;
+    background : red;
+    font-size : .85em;
+    font-weight : 500;
+    color : #ff7e00;
+    padding : 15px 20px;
+    text-align: center;
+}
+
+/*item hover*/
+section .item:hover {
+    border-color : white;
+    z-index : 999;
+}
+
+.item:hover .category-info {
+    color : white;
+    border-color : white;
+}
+
+.item:hover .title {
+    color : white;
+    border-color : white;
+}
+
+.item:hover .etc-info div{
+    color : white;
+    border-color : white;
+}
+
+.item:hover .etc-info section {
+    background : white;
+}
+
+/*header*/
+header {
+    width : 60px;
+    display : grid;
+    grid-template-rows: 50% 50%;
+    font-size : 3.5vh;
+    font-weight : 500;
+    line-height : 6vh;
+    letter-spacing: -1px;
+    margin : -1px;
+}
+
+header div:first-child {
+    background: #ff00ff;
+    writing-mode: vertical-rl;
+}
+
+header div:last-child {
+    background : #1900ff;
+    writing-mode: vertical-rl;
+    transform : rotate(180deg);
+}
+
+header span{
+    padding-top : 1.5vh;
+}
+
+header span:hover {
+    color : white;
+}
+
+/*footer*/
+footer {
+    width : 35%;
+    background: red;
+    display : flex;
+    flex-direction: column;
+    font-size : 2vw;
+    font-weight : 500;
+    letter-spacing: -2px;
+    overflow : auto;
+}
+
+footer nav {
+    height : 5%;
+    padding : 10px;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer nav span {
+    padding : 5px; 
+}
+
+footer div p {
+    text-indent : 3em;
+    padding : 15px;
+    line-height: 2.5vw
+}
+
+footer nav span:hover {
+    color : white;
+}
+
+::-moz-selection {
+   background: transparent;
+   color: #fff;
+}
+::selection {
+   background: transparent;
+   color: #fff;
+}
+
+/*scrollbar*/
+* {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+/*etc*/
+header i {
+    position : absolute;
+    top : calc(50% - 28px);
+    z-index : 999;
+    font-size : 40px;
+    animation: rotate_image 5s linear infinite;
+    transform-origin: 50% 50%;
+    padding : 10px;
+}
+
+header i:hover {
+    animation: rotate_image 2s linear infinite;
+    color : white;
+}
+ 
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}

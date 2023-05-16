@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-weight : 500;
+}
+
+h1{
+  font-size : 70px;
+  text-align: center;
+  padding : 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 320px;
+  grid-auto-rows: 320px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align : center;
+  padding : 30px;
+}
+
+p:first-child {
+  font-size : 18px;
+}
+
+p:last-child {
+  font-size : 9px;
+}
+
+img {
+  max-height: 60vh;
+  object-fit : cover;
+}
+
+.cell:first-child{
+  background : #bfbda7;
+}
+
+.cell:nth-child(3) {
+  background : #fe4714;
+}
+
+.cell:nth-child(5) {
+  background : #847e96;
+}
+
+.cell:nth-child(6) {
+  background : #d0ff71;
+}
+
+.cell:nth-child(7) {
+  background : #993333;
+}
+
+.cell:nth-child(8) {
+  background : #3aaafa;
+}
+
+.cell:nth-child(10) {
+  background : #41907a;
+}
+
+.cell:nth-child(12) {
+  background : #e3c4e5;
+}
