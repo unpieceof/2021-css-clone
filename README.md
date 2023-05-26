@@ -1,5 +1,8 @@
-# 2021_css_clone
+# 2021-css-clone
 CSS Clone study
+
+![image](https://github.com/unpieceof/2021-css-clone/assets/101758997/ccd08b37-128d-4d4e-b184-c125c4183c3e)
+
 
 ## Day 2 - Paris
 ![css-layout-day2 ensoo94 repl co_](https://github.com/unpieceof/2021_css_clone/assets/101758997/0606679c-950f-4fd1-93b3-5fdbf066fce0)
